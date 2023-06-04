@@ -2,7 +2,7 @@ package com.chess.game;
 
 public class Board {
 
-	Cell[][] cells = new Cell[8][8];
+	private Cell[][] cells = new Cell[8][8];
 
 	public Board(Cell[][] cells) {
 		this.cells = cells;

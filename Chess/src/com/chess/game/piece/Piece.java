@@ -6,7 +6,7 @@ import com.chess.game.enums.Color;
 
 public abstract class Piece {
 
-	Color color;
+	protected final Color color;
 
 	public Piece(Color color) {
 		this.color = color;
@@ -14,10 +14,6 @@ public abstract class Piece {
 
 	public Color getColor() {
 		return color;
-	}
-
-	public void setColor(Color color) {
-		this.color = color;
 	}
 
 	public abstract boolean move(int row, int col);

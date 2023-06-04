@@ -10,15 +10,13 @@ import com.chess.game.piece.Rook;
 
 public class Game {
 
-	private final Board board;
-	
+	private static final Board board;
 
 	public void startGame() {
 		BoardPrinter.printBoard(board);
 	}
 
-
-	{
+	static {
 
 		Cell[][] cells = new Cell[8][8];
 
@@ -80,6 +78,6 @@ public class Game {
 			}
 		}
 
-		this.board = new Board(cells);
+		board = new Board(cells);
 	}
 }

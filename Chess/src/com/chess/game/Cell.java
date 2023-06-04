@@ -5,8 +5,8 @@ import com.chess.game.piece.Piece;
 
 public class Cell {
 
-	final Color color;
-	Piece piece;
+	private final Color color;
+	private Piece piece;
 
 	public Cell(Color color) {
 		this.color = color;
