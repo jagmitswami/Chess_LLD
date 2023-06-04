@@ -1,6 +1,12 @@
 package com.chess.game;
 
 import com.chess.game.enums.Color;
+import com.chess.game.piece.Bishop;
+import com.chess.game.piece.King;
+import com.chess.game.piece.Knight;
+import com.chess.game.piece.Pawn;
+import com.chess.game.piece.Queen;
+import com.chess.game.piece.Rook;
 
 public class Game {
 

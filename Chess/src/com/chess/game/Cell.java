@@ -1,6 +1,7 @@
 package com.chess.game;
 
 import com.chess.game.enums.Color;
+import com.chess.game.piece.Piece;
 
 public class Cell {
 

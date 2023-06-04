@@ -1,4 +1,4 @@
-package com.chess.game;
+package com.chess.game.piece;
 
 import com.chess.game.enums.Color;
 
