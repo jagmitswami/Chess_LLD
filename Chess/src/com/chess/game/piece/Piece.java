@@ -16,7 +16,7 @@ public abstract class Piece {
 		return color;
 	}
 
-	public abstract boolean move(int row, int col);
+	public abstract boolean move(int[] current, int[] next);
 
 	public abstract List<int[]> validMoves(int[] currentPosition);
 

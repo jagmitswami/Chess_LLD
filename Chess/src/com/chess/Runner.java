@@ -1,6 +1,7 @@
 package com.chess;
 
 import com.chess.game.Game;
+import com.chess.game.enums.GameStaus;
 
 public class Runner {
 
@@ -11,7 +12,8 @@ public class Runner {
 	}
 
 	public static void main(String[] args) {
-		game.startGame();
+		GameStaus staus = game.play();
+		System.out.println(staus);
 	}
 
 }

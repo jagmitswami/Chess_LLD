@@ -3,6 +3,7 @@ package com.chess.game.piece;
 import java.util.ArrayList;
 import java.util.List;
 
+import com.chess.game.Cell;
 import com.chess.game.enums.Color;
 
 public class Pawn extends Piece {
@@ -12,7 +13,7 @@ public class Pawn extends Piece {
 	}
 
 	@Override
-	public boolean move(int row, int col) {
+	public boolean move(int[] current, int[] next) {
 		int[] currentPosition = currentPosition();
 		List<int[]> validMoves = validMoves(currentPosition);
 
