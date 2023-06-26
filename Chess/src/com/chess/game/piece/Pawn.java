@@ -3,7 +3,6 @@ package com.chess.game.piece;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.chess.game.Cell;
 import com.chess.game.enums.Color;
 
 public class Pawn extends Piece {
@@ -13,8 +12,7 @@ public class Pawn extends Piece {
 	}
 
 	@Override
-	public boolean move(int[] current, int[] next) {
-		int[] currentPosition = currentPosition();
+	public boolean move(int[] currentPosition, int[] nextPosition) {
 		List<int[]> validMoves = validMoves(currentPosition);
 
 		if (validMoves.isEmpty()) {
@@ -30,7 +28,7 @@ public class Pawn extends Piece {
 	}
 
 	@Override
-	public List<int[]> validMoves(int[] currentPosition) {
+	protected List<int[]> validMoves(int[] currentPosition) {
 		List<int[]> validMovesForPawn = new ArrayList<>();
 
 		int row = currentPosition[0];
@@ -44,12 +42,7 @@ public class Pawn extends Piece {
 	}
 
 	@Override
-	public int[] currentPosition() {
-		return null;
-	}
-
-	@Override
-	public boolean anyAbstrationPresent(int row, int col) {
+	protected boolean anyAbstrationPresent(int row, int col) {
 		// TODO Auto-generated method stub
 		return false;
 	}

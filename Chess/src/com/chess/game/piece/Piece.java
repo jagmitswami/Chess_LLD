@@ -16,12 +16,10 @@ public abstract class Piece {
 		return color;
 	}
 
-	public abstract boolean move(int[] current, int[] next);
+	public abstract boolean move(int[] currentPosition, int[] nextPosition);
 
-	public abstract List<int[]> validMoves(int[] currentPosition);
+	protected abstract List<int[]> validMoves(int[] currentPosition);
 
-	public abstract int[] currentPosition();
+	protected abstract boolean anyAbstrationPresent(int row, int col);
 
-	public abstract boolean anyAbstrationPresent(int row, int col);
-	
 }

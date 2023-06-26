@@ -2,13 +2,15 @@ package com.chess.game.piece;
 
 import java.util.List;
 
-import com.chess.game.Cell;
 import com.chess.game.enums.Color;
 
 public class Rook extends Piece {
 
+	private boolean isMoved;
+
 	public Rook(Color color) {
 		super(color);
+		isMoved = false;
 	}
 
 	@Override
@@ -18,19 +20,13 @@ public class Rook extends Piece {
 	}
 
 	@Override
-	public List<int[]> validMoves(int[] currentPosition) {
+	protected List<int[]> validMoves(int[] currentPosition) {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
-	public int[] currentPosition() {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	@Override
-	public boolean anyAbstrationPresent(int row, int col) {
+	protected boolean anyAbstrationPresent(int row, int col) {
 		// TODO Auto-generated method stub
 		return false;
 	}

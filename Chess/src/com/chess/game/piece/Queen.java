@@ -2,7 +2,6 @@ package com.chess.game.piece;
 
 import java.util.List;
 
-import com.chess.game.Cell;
 import com.chess.game.enums.Color;
 
 public class Queen extends Piece {
@@ -18,19 +17,13 @@ public class Queen extends Piece {
 	}
 
 	@Override
-	public List<int[]> validMoves(int[] currentPosition) {
+	protected List<int[]> validMoves(int[] currentPosition) {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
-	public int[] currentPosition() {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	@Override
-	public boolean anyAbstrationPresent(int row, int col) {
+	protected boolean anyAbstrationPresent(int row, int col) {
 		// TODO Auto-generated method stub
 		return false;
 	}
